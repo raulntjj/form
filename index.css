@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    background-color: #11181f;
+}
+
+header{
+    margin: 20px 30% 20px 30%;
+}
+
+header h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+header p{
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #26404e 0%, #3a6a81 50%, #26404e 100%);
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 500px;
+}
+
+section div{
+    font-size: auto;
+}
+
+.bgdiv{
+    background-color: #1b2a35;;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+}
+
+.bgdiv h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input[type=text], [type=date], [type=email], [type=select]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+input[type=radio]{
+    padding: 12px 20px;
+    margin: 10px 5px 20px 10px;
+    box-sizing: border-box;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    padding: 10px 230px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type=submit]:hover{
+    border: 2px solid white;
+    background-color:  #11181f;
+    color: white;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/*Palheta de cor
+.color1 {color: #000006;}
+.color2 {color: #11181f;}
+.color3 {color: #1b2a35;}
+.color4 {color: #26404e;}
+.color5 {color: #30586a;}
+*/

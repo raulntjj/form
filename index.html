@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+
+    <title>Forms</title>
+</head>
+    <body>
+        <header>
+            <h1>Cadastro de Pessoa</h1>
+            <p>Neste formulário você cadastrará uma pessoa</p>
+            <br/>
+        </header>
+        <main>
+            <form method="POST" action="./register.php">
+                <section>
+                    <div class="bgdiv">
+                        <h2>Dados Pessoais</h2>
+                        <div>
+                            <label for="name"><p>Primeiro Nome</p></label>
+                            <input type="text" alt="Submit" name="name" id="name" placeholder="Seu primeiro nome...">
+                        <div>
+                            <label for="secondname"><p>Sobrenome</p></label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Seu sobrenome...">
+                        </div>
+                        </div>
+                        <div>
+                            <label for="cpf"><p>CPF</p></label>
+                            <input type="text" name="cpf" id="cpf" placeholder="Exemplo: 000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+                        </div>
+                        <div>
+                            <label for="date"><p>Data de Aniversário</p></label>
+                            <input type="date" name="date" id="date" placeholder="Day/Month/Year">
+                        </div>
+                        <div>
+                            <label for="gender"><p>Gênero</p></label>
+                            <label><input type="radio" name="gender" id="gender">Masculino</label>
+                            <label><input type="radio" name="gender" id="gender">Feminino</label>
+                        </div>
+                        <div>
+                            <label for="country"><p>País de Residência</p></label>
+                            <select id="country">
+                                <option selected disabled placeholder>Escolha seu país de residência...</option>
+                                <option>Brasil</option>
+                                <option>Estados Unidos</option>
+                                <option>Argentina</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="bgdiv">
+                        <h2>Dados Profissionais</h2>
+                        <div>
+                            <label for="email"><p>Email</p></label>
+                            <input type="email" name="email" id="email" placeholder="name@exemple.com">
+                        </div>
+                        <div>
+                            <label for="formation"><p>Formação</p></label>
+                            <select id="formation">
+                                <option selected disabled placeholder>Escolha seu curso...</option>
+                                <option>Ciências da Computação</option>
+                                <option>Engenharia da Computação</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="submit">
+                        <input type="submit">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
